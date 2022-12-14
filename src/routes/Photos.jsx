@@ -43,7 +43,7 @@ const Photos = () => {
     // TODO: answer here
   const data = async() => {
       try{
-        await fetch("http://localhost:3001/photos")
+        await fetch("https://gallery-app-server.vercel.app/photos")
         .then((response) => response.json()) // mengubah response menjadi JSON
         .then((json) => setPhotos(json)); // menampilkan response yang sudah dalam format JSON
         setLoading(false)
